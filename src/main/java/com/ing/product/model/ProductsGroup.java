@@ -32,10 +32,9 @@ public class ProductsGroup implements Serializable, Comparable{
 	@Column(name="count")
 	private int count;
 
-	/*
-	 * @OneToMany(mappedBy="productsGroup",cascade = CascadeType.ALL) public
-	 * List<ProductName> productName;
-	 */
+	 @OneToMany(mappedBy="productsGroup",cascade = CascadeType.ALL) public
+	 List<ProductName> productName;
+
 	public int getId() {
 		return id;
 	}

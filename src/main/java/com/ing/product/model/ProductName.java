@@ -26,11 +26,11 @@ public class ProductName implements Serializable{
 	@Column(name="product_name")
 	private String productName;
 
-	/*
-	 * @ManyToOne
-	 * 
-	 * @JoinColumn private ProductsGroup productsGroup;
-	 */
+
+	 @ManyToOne
+
+	 @JoinColumn private ProductsGroup productsGroup;
+
 	public Long getId() {
 		return id;
 	}
