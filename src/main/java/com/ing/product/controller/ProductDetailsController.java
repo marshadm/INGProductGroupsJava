@@ -2,6 +2,7 @@ package com.ing.product.controller;
 
 import java.util.List;
 
+import com.ing.product.service.ProductDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,7 +15,7 @@ import com.ing.product.service.ProductGroupServiceImpl;
 public class ProductDetailsController implements ProductDetailsControllerApi {
 	
 	@Autowired
-	private ProductGroupServiceImpl pgs;
+	private ProductDetailsService pgs;
 	
 	@Override
 	@GetMapping("/getProductDetails/{id}")
