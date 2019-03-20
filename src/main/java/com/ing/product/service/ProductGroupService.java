@@ -10,4 +10,8 @@ import com.ing.product.model.ProductsGroup;
 public interface ProductGroupService {
 
 	public List<ProductsGroup> getProduct();
+
+	public ProductsGroup getProductGroup(Long productId);
+
+	public void updateProductGroup(ProductsGroup productsGroup);
 }

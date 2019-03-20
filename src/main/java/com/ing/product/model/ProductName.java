@@ -46,6 +46,6 @@ public class ProductName implements Serializable{
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
-	
+
 
 }

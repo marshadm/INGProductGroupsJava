@@ -15,7 +15,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="product_group")
-public class ProductsGroup implements Serializable{
+public class ProductsGroup implements Serializable, Comparable{
 
 	/**
 	 * 
@@ -60,4 +60,9 @@ public class ProductsGroup implements Serializable{
 		this.count = count;
 	}
 
+	@Override
+	public int compareTo(Object pg) {
+		int compareCount = ((ProductsGroup)pg).getCount();
+		return compareCount-this.getCount();
+	}
 }
